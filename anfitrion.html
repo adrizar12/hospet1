@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conviértete en anfitrión - Hospet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="registro-anfitrion">
+    <div class="container">
+      <h2>Regístrate como anfitrión</h2>
+      <form action="https://formspree.io/f/xwpoelnq" method="POST" class="formulario">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="ubicacion">Ciudad o zona</label>
+        <input type="text" id="ubicacion" name="ubicacion" required>
+
+        <label for="experiencia">¿Tienes experiencia cuidando mascotas?</label>
+        <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+
+        <label for="disponibilidad">Disponibilidad</label>
+        <select id="disponibilidad" name="disponibilidad">
+          <option value="tiempo_completo">Tiempo completo</option>
+          <option value="fines_de_semana">Solo fines de semana</option>
+          <option value="ocasional">Ocasional</option>
+        </select>
+
+        <button type="submit" class="cta-button">Enviar registro</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
